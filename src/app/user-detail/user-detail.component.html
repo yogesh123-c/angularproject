@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row" *ngFor="let row of user_data;">
+      <div class="col-md-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title ml-2">User Account</h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+             
+              <div class=" col-md-12 ml-2">
+                <table class="table table-user-information">
+                  <tbody>
+                    <tr>
+                      <td>Your Name: </td>
+                      <td>{{row.user_name}}</td>
+                    </tr>
+                    <tr>
+                      <td>Your Mobile No:</td>
+                      <td>{{row.user_mobile}}</td>
+                    </tr>
+                    <tr>
+                        <td>Your Email Id:</td>
+                        <td>{{row.user_email}}</td>
+                      </tr>
+                      <tr>
+                        <td>Your Password:</td>
+                        <td>{{row.user_password}}</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td><button class="btn btn-dark mr-3 hide_print" style="border-radius: 0px;" routerLink="/myorder">Check My Order</button></td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
